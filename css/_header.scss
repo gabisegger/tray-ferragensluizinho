@@ -1,0 +1,137 @@
+/**
+ * Header
+ */
+ .nav-full{
+    background: #1F3F3E;
+}
+header{
+    background: #EDEDED;
+    .container{
+        width: 1088px;
+        max-width: 100%;
+        margin: auto;
+        .row{
+            .logo{
+                width: 275px;
+                height: 75px;
+            }
+            .pesquisa{
+                width: 536px;
+                height: 50px;
+                .form{
+                    border-radius: 50px;
+                    background: #EDEDED;
+                    border: 1px solid #1f3f3e;
+                    color: black;
+                    .search-button{
+                        background: #EDEDED;
+                    }
+                    .search-key{
+                        font-family: $P;
+                        font-size: 18px;
+                        font-weight: 500;
+                        font-style: italic;
+                        color: #1F3F3E;
+                    }
+                }
+            }
+            .conta{
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                a{
+                    font-family: $P;
+                    font-size: 18px;
+                    font-weight: 500;
+                    color: #1f3f3e
+                }
+                .carrinho{
+                    background: #EDEDED;
+                }
+            }
+        }
+    }
+}
+.wrapper-nav{
+    background: #4b8cdc;
+    clear: both;
+}
+
+.wrapp-cart{
+    padding: 0;
+}
+
+.trigger-menu{
+    background: none;
+    border: none;
+    margin: 0;
+    padding: 19px 0;
+}
+
+.site-logo {
+    height: 120px;
+    display: block;
+    font-size: 0;
+    text-align: center;
+    
+    &:before{
+        content: '';
+        display: inline-block;
+        height: 120px;
+        margin-right: -1%;
+        vertical-align: middle;
+        width: 1%;
+    }
+    
+    img{
+        display: inline-block;
+        max-height: 120px;
+        max-width: 99%;
+        vertical-align: middle;
+    }
+}
+
+
+.floating {
+    display: none;
+    height: 85px;
+
+    .site-logo{
+        height: 85px;
+        
+        &:before {
+            height: 80px;
+        }
+        
+        img{
+            max-height: 70px;
+        }
+    }
+    
+    .search-1 {
+        padding: 20px 0;
+    }
+    
+    .cart-1 {
+        padding: 17px 0;
+    }
+}
+
+.fixed {
+    display: block;
+    background: #EDEDED;
+    box-shadow: -4px -1px 10px 5px rgba(0,0,0,30%);
+    border-bottom: unset;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 11;
+    
+    .customer {
+        display: none;
+    }
+    
+    @media screen and (max-width: $sm){ 
+        display: none;
+    }
+}

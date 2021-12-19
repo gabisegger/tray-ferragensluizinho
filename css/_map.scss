@@ -1,0 +1,57 @@
+.page-map main.container{
+    width: 1088px;
+    max-width: 100%;
+    margin: auto;
+    padding: 30px;
+    .page-content{
+        .container3{
+            .container2{
+                .board{
+                    img{
+                        margin-top: 20px;
+                        background: #1f3f3e;
+                    }
+                    h1{
+                        font-family: $P;
+                        font-size: 40px;
+                        font-weight: 700;
+                        color: #1f3f3e;
+                        padding: 20px 0;
+                    }
+                    
+                }
+            }
+        }
+        .board{
+            h2{
+                background: #60A038;
+                border-radius: 50px;
+                font-family: $P;
+                font-size: 25px;
+                font-weight: 800;
+                margin-bottom: 8px;
+                color: #EDEDED;
+                a{
+                    font-family: $P;
+                    font-size: 25px;
+                    font-weight: 800;
+                    margin-bottom: 8px;  
+                    color: #EDEDED;
+                }
+            }
+
+            h3{
+                a{
+                    border-radius: 50px;
+                    font-family: $P;
+                    font-size: 16px;
+                    font-weight: 500;
+                }
+            }
+        }
+    }            
+}
+@media screen and (max-width: 760px){
+    
+       
+}
