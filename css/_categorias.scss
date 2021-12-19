@@ -75,6 +75,16 @@
         .catalog-header{
             padding-left: 20px;
         }
+        .catalog-content{
+            .showcase-catalog{
+                ul.row{
+                    .product{
+                        width: unset;
+                        height: unset;
+                    }
+                }
+            }
+        }
     }
     
 }
