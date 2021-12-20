@@ -92,3 +92,35 @@
         font-weight: 400;
     }
 }
+@media screen and (max-width: 760px){
+    .page-register main.container{
+        .page-content{
+            padding: 0px;
+            .container3{
+                .container2{
+                    .board{
+                        h1{
+                            line-height: 1;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+        #CadastroAbas{
+            ul{
+                display: grid;
+                gap: 5px;
+                justify-items: center;
+            }
+            li{
+                width: 100%;
+            }
+        }
+        #frm2{
+            .txt-dados-pessoais{
+                text-align: center;
+            }
+        }
+    }
+}
