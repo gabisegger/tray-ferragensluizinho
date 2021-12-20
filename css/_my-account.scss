@@ -8,9 +8,60 @@
         font-family: $P;
         font-size: 18px;
         font-weight: 500;
-    }
-    
+    }  
 }
+header.app__dashboard__header{
+    border-radius: 50px;
+    h2{
+        font-family: $P;
+        font-size: 18px;
+        font-weight: 800;
+        padding: 15px;
+        color: #1f3f3e;
+    }
+}
+.app__order-not-found__text{
+    font-family: $P;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.app__link--featured{
+    color: #60A038;
+}
+header.app__customer-preview__header{
+    border-radius: 50px;
+    h2{
+        font-family: $P;
+        font-size: 18px;
+        font-weight: 800;
+        padding: 15px;
+        color: #1f3f3e;
+    }
+}
+.app__customer-preview__content{
+    font-family: $P;
+    font-size: 16px;
+    font-weight: 500;
+}
+.app__progress-circle{
+    margin: auto;
+    .app__progress__label{
+        width: 100%;
+        font-family: $P;
+        font-size: 16px;
+        font-weight: 400;
+        padding-top: 10px;
+    }
+}
+.app__button--no-margin{
+    background: #60A038;
+    border-radius: 50px;
+    font-family: $P;
+    font-size: 16px;
+    font-weight: 700;
+}
+
 
 
 
