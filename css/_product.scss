@@ -209,27 +209,36 @@
             .cart-preview-item-name-box{
                 span{
                     font-family: $P;
-                    font-size: 16px;
+                    font-size: 18px;
                     font-weight: 500;
                 }
                 small{
                     font-family: $P;
-                    font-size: 11px;
+                    font-size: 12px;
                     font-weight: 400;
                     margin-top: 5px;
                 }
                
             }
             .cart-preview-item-price-box{
+                width: unset;
                 .block{
                     font-family: $P;
-                    font-size: 16px;
+                    font-size: 18px;
                     font-weight: 500;
                 }
                 small{
                     font-family: $P;
+                    font-size: 12px;
+                    font-weight: 400;
+                }
+            }
+            .cart-preview-item-delete-box{
+                span{
+                    font-family: $P;
                     font-size: 11px;
                     font-weight: 400;
+                    margin-left: 10px;
                 }
             }
         }
@@ -301,6 +310,33 @@
                 line-height: 1;
                 margin-bottom: 33px;
                 text-align: center;
+            }
+        }
+    }
+}
+.modal-content{
+    left: -7px;
+    .modal-body{
+        padding-right: 0px;
+        padding-left: 0px;
+        .cart-preview-table{
+            .cart-preview-item-name-box{
+                span{
+                    font-size: 16px;
+                }
+            }
+            .cart-preview-item-price-box{
+                .block{
+                    font-size: 15px;
+                }
+                small{
+                    font-size: 9px;
+                }
+            }
+            .cart-preview-item-delete-box{
+                span{
+                    font-size: 9px;
+                }
             }
         }
     }

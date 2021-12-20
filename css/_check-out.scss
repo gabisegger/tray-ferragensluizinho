@@ -8,6 +8,11 @@ header.ch-flex{
         color: #1f3f3e;
         padding-left: 20px;
     }
+    .ch-cart-coupon{
+        font-family: $P;
+        font-size: 16px;
+        font-weight: 500;
+    }
     .row{
         padding-top: 10px;
         width: 18%;
@@ -74,6 +79,71 @@ header.ch-flex{
                 font-size: 18px;
                 font-weight: 400; 
             }
+        }
+
+    }
+    .ch-cart-product-name{
+        font-family: $P;
+        font-size: 18px;
+        font-weight: 500;
+    }
+    .ch-cart-product-reference, .ch-cart-product-brand, .ch-cart-product-gift-wrap{
+        font-family: $P;
+        font-size: 14px;
+        font-weight: 500;
+    }
+    .ch-cart-tooltip-container{
+        font-family: $P;
+        font-size: 18px;
+        font-weight: 500;
+    }
+    .ch-cart-product-price-unit{
+        font-family: $P;
+        font-size: 14px;
+        font-weight: 500;
+    }
+    
+}
+.ch-cart-checkout-actions{
+    .ch-vspace-sm{
+        .ch-btn-default{
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 16px;
+            font-family: $P;
+        }
+    }
+    .hidden-xs{
+        .btn-next-step{
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 16px;
+            font-family: $P;
+            background: #60A038;
+        
+        }
+    }
+}
+
+.modal-content{
+    border-radius: 50px;
+    padding: 25px;
+    .modal-body{
+        padding: 20px;
+        tbody{
+            font-family: $P;
+            font-size: 16px;
+            font-weight: 500;
+        }
+    }
+    .modal-footer{
+        padding-bottom: 30px;
+        .btn-close{
+            background: #60A038;
+            font-family: $P;
+            font-size: 16px;
+            font-weight: 700;
+            color: #fff;
         }
     }
 }

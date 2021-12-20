@@ -9,6 +9,20 @@
         font-size: 18px;
         font-weight: 500;
     }  
+    .app__progress{
+        .app__progress__label{
+            width: 120px;
+            font-family: $P;
+            font-size: 16px;
+            font-weight: 500;
+        }
+    }
+    .app__progress--circle{
+        .app__progress__text{
+            font-family: $P;
+            font-size: 25px;
+        }
+    }
 }
 header.app__dashboard__header{
     border-radius: 50px;
@@ -68,6 +82,13 @@ header.app__customer-preview__header{
             color: #60A038;
         }
     }
+    .app__dropdown{
+        ul{
+            font-family: $P;
+            font-size: 16px;
+            font-weight: 500;
+        }
+    }
     .app__customer-greetings__greeting-item{
         font-family: $P;
         font-size: 16px;
@@ -104,6 +125,41 @@ header.app__address-list__header{
 }
 .app__button--primary-outline{
     color: #FFFFFF;
+}
+header.app__customer-password-change__header{
+    border-radius: 50px;
+    h3{
+        font-family: $P;
+        font-size: 18px;
+        font-weight: 800;
+        padding: 15px;
+        color: #1f3f3e;
+    }
+}
+form.app__customer{
+    #new-password, #confirm-password{
+        height: 35px!important;
+        border-radius: 50px;
+        font-family: $P;
+        font-size: 16px;
+        font-weight: 500;
+        padding-left: 25px;
+    }
+    svg.fa-w-14{
+        width: 15px;
+        height: 15px;
+    }
+    svg.fa-w-20{
+        top: 0px;
+        right: 5px;
+        width: 25px;
+        height: 25px;
+    }
+    .app__customer-password-change__validation-rules{
+        font-family: $P;
+        font-size: 16px;
+        font-weight: 400;
+    }
 }
 
 
