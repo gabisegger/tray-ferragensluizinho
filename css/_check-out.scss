@@ -24,3 +24,56 @@ header.ch-flex{
     border-top: 0px;
     
 }
+.row{
+    .col-sm-6{
+        font-family: $P;
+        font-size: 18px;
+        font-weight: 500;
+        .ch-valign-center{
+            color: #1f3f3e;
+            font-family: $P;
+            font-size: 25px;
+            font-weight: 700;
+        }
+        .ch-text-left{
+            font-family: $P;
+            font-size: 18px;
+            font-weight: 400;
+        }
+        .ch-cart-summary-title{
+            h3{
+                color: #1f3f3e;
+                font-family: $P;
+                font-size: 25px;
+                font-weight: 700;
+            }
+        }
+        .ch-cart-subtotal{
+            font-family: $P;
+            font-size: 18px;
+            font-weight: 400;
+        }
+        .ch-cart-total{
+            strong{
+                font-family: $P;
+                font-size: 18px;
+                font-weight: 700;  
+            }
+            .ch-cart-total-price{
+                font-size: 29px;
+            }
+        }
+        .ch-cart-total-split{
+            font-family: $P;
+            font-size: 18px;
+            font-weight: 400;
+        }
+        .ch-cart-coupon{
+            p{
+                font-family: $P;
+                font-size: 18px;
+                font-weight: 400; 
+            }
+        }
+    }
+}
