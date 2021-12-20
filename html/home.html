@@ -1,0 +1,179 @@
+{% if settings.limitProducts %}
+    {% set limitProducts = settings.limitProducts %}
+{% else %}
+    {% set limitProducts = 12 %}
+{% endif %}
+
+{% set showAvailable = settings.show_available_products ? 'available' %}
+
+<div class="block-1">
+  {% element 'snippets/banner-home' %}
+</div>
+
+<div class="block-2">
+  <div class="center">
+    <ul>
+      <li>
+        <img src="http://images.tcdn.com.br/files/1079236/themes/13/img/cards.svg" alt="Todo o site em até 6x s/juros" />
+        <span>Todo o site em até 6x s/juros</span>
+      </li>
+      <li>
+        <img src="http://images.tcdn.com.br/files/1079236/themes/13/img/truck.svg" alt="Entrega para todo o Brasil" />
+        <span>Entrega para <strong>todo o Brasil</strong></span>
+      </li>
+      <li>
+        <img src="http://images.tcdn.com.br/files/1079236/themes/13/img/secure-site.svg" alt="Site Seguro | Compre com tranquilidade" />
+        <span><strong>Site Seguro |</strong> Compre com tranquilidade</span>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<div class="block-3 showcase">
+  <div class="center">
+    {% set showcaseText = "Ofertas Relâmpago" %}
+
+    {% if showAvailable %}
+      {% if settings.showcase_1 == "top_seller" %}
+      <div id="prognoos_popv1"></div>	
+      
+          {% set products = Products({
+              'filter': showAvailable,
+              'limit': limitProducts,
+              'order': {'quantity_sold': 'desc'}
+          }) %}    
+      
+      {% else %}
+          {% set products = Products({
+              'filter': [showAvailable, settings.showcase_1],
+              'limit': limitProducts,
+              'order': 'rand'
+          }) %}
+      {% endif %}
+      
+    {% else %}
+        {% if settings.showcase_1 == "top_seller" %}
+        <div id="prognoos_popv1"></div>
+        
+            {% set products = Products({
+                'filter': available,
+                'limit': limitProducts,
+                'order': {'quantity_sold': 'desc'}
+            }) %}      
+        {% else %}
+            {% set products = Products({
+                'filter': settings.showcase_1,
+                'limit': limitProducts,
+                'order': 'rand'
+            }) %}
+        {% endif %}
+    {% endif %}
+
+    {% element 'showcase' { 
+        "products": products,
+        "showcaseTitle": showcaseText
+    } %}
+  </div>
+</div>
+
+<div class="block-4"></div>
+
+<div class="block-5 showcase">
+  <div class="center">
+    {% set showcaseText = "Destaques" %}
+
+    {% if showAvailable %}
+      {% if settings.showcase_2 == "top_seller" %}
+      <div id="prognoos_popv1"></div>	
+      
+          {% set products = Products({
+              'filter': showAvailable,
+              'limit': limitProducts,
+              'order': {'quantity_sold': 'desc'}
+          }) %}    
+      
+      {% else %}
+          {% set products = Products({
+              'filter': [showAvailable, settings.showcase_2],
+              'limit': limitProducts,
+              'order': 'rand'
+          }) %}
+      {% endif %}
+      
+    {% else %}
+        {% if settings.showcase_2 == "top_seller" %}
+        <div id="prognoos_popv1"></div>
+        
+            {% set products = Products({
+                'filter': available,
+                'limit': limitProducts,
+                'order': {'quantity_sold': 'desc'}
+            }) %}      
+        {% else %}
+            {% set products = Products({
+                'filter': settings.showcase_2,
+                'limit': limitProducts,
+                'order': 'rand'
+            }) %}
+        {% endif %}
+    {% endif %}
+
+    {% element 'showcase' { 
+        "products": products,
+        "showcaseTitle": showcaseText
+    } %}
+  </div>
+</div>
+
+<div class="block-6"></div>
+
+<div class="block-7 showcase">
+  <div class="center">
+    {% set showcaseText = "Produtos em Alta" %}
+
+    {% if showAvailable %}
+      {% if settings.showcase_3 == "top_seller" %}
+      <div id="prognoos_popv1"></div>	
+      
+          {% set products = Products({
+              'filter': showAvailable,
+              'limit': limitProducts,
+              'order': {'quantity_sold': 'desc'}
+          }) %}    
+      
+      {% else %}
+          {% set products = Products({
+              'filter': [showAvailable, settings.showcase_3],
+              'limit': limitProducts,
+              'order': 'rand'
+          }) %}
+      {% endif %}
+      
+    {% else %}
+        {% if settings.showcase_3 == "top_seller" %}
+        <div id="prognoos_popv1"></div>
+        
+            {% set products = Products({
+                'filter': available,
+                'limit': limitProducts,
+                'order': {'quantity_sold': 'desc'}
+            }) %}      
+        {% else %}
+            {% set products = Products({
+                'filter': settings.showcase_3,
+                'limit': limitProducts,
+                'order': 'rand'
+            }) %}
+        {% endif %}
+    {% endif %}
+
+    {% element 'showcase' { 
+        "products": products,
+        "showcaseTitle": showcaseText
+    } %}
+  </div>
+</div>
+
+<div class="block-8"></div>
+
+<div class="block-9"></div>
