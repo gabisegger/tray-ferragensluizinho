@@ -13,20 +13,6 @@
         {% endif %}
     {% endif %}
 
-    {% if checkout == "false" %}
-        {% if settings.hottags_position == 1 %}
-        <div class="container">
-            <div class="tagcloud">
-                <h4>As palavras</h4>
-                <h3>{{ Translation('tags_mais_buscadas') }}</h3>
-                {% for tag in tags %}
-                  <a href="{{ tag.url }}" style="font-size: {{ tag.font_size }}%">{{ tag.word }}</a>
-                {% endfor %}
-            </div>
-        </div>
-        {% endif %}
-    {% endif %}
-
     <div class="news-full">
         <div class="container ">
             {% element 'snippets/newsletter' %}
