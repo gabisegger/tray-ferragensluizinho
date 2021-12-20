@@ -287,7 +287,11 @@ body .product-1{
                 font-family: $P;
                 font-size: 18px;
                 font-weight: 500;
-            
+                font-size: 0;
+                &::before {
+                    content: 'Clique e confira!';
+                    font-size: 18px;
+                }
             }
             
             i{
