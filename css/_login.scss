@@ -1,0 +1,118 @@
+.page-login main.container{
+    width: 1088px;
+    max-width: 100%;
+    margin: auto;
+    padding-top: 30px;
+    .container2{
+        .board{
+            .caixa-login{
+                border-radius: 50px;
+                padding: 30px 45px;
+                h3{
+                    font-family: $P;
+                    font-size: 25px;
+                    font-weight: 700;
+                    color: #1f3f3e;
+                }
+                label{
+                    font-family: $P;
+                    font-size: 16px;
+                    font-weight: 400;
+                }
+                .botao-commerce{
+                    font-family: $P;
+                    font-size: 18px;
+                    background: #60A038;
+                    border-radius: 50px;
+                }
+            }
+            .caixa-cadastro{
+                border-radius: 50px;
+                padding: 30px 49px;
+                h3{
+                    font-family: $P;
+                    font-size: 25px;
+                    font-weight: 700;
+                    color: #1f3f3e;
+                }
+                form{
+                    .campo-email{
+                        label{
+                            font-family: $P;
+                            font-size: 16px;
+                            font-weight: 400;
+                            input{
+                                border-radius: 50px;
+                            }
+                        }
+                    }
+                    .botao-commerce{
+                        font-family: $P;
+                        font-size: 18px;
+                        background: #60A038;
+                        border-radius: 50px;
+                    }
+                }
+            }
+        }
+    }
+}
+tray-login .tray-container__identify{
+    width: 430px;
+    height: 250px;
+    padding-top: 25px;
+    form{
+        input{
+            font-family: $P;
+            font-size: 16px;
+            font-weight: 400;
+        }
+    }
+    .tray-title{
+        font-family: $P;
+        font-size: 25px;
+        font-weight: 700;
+        color: #1f3f3e;
+    }
+    .tray-input{
+        border-radius: 50px;
+    }
+    .tray-btn-primary{
+        background: #60A038;
+        border-radius: 50px;
+        font-family: $P;
+        font-size: 18px;
+        font-weight: 700;
+    }
+    .tray-btn-facebook{
+        border-radius: 50px;
+        font-family: $P;
+        font-size: 18px;
+        font-weight: 700;
+    }
+}
+@media screen and (max-width: 760px){
+    .page-login main.container{
+        .container2{
+            .board{
+                .caixa-login{
+                    padding: 30px 20px;
+                    label{
+                        text-align: center;
+                    }
+                }
+                .caixa-cadastro{
+                    padding: 30px 20px;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+    tray-login .tray-container__identify{
+        width: 280px;
+        height: auto;
+        .tray-title{
+            text-align: center;
+        }
+    }
+}

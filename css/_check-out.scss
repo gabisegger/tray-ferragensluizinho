@@ -1,0 +1,26 @@
+header.ch-flex{
+    border-radius: 50px;
+    padding: 10px 0;
+    .ch-title-2{
+        font-family: $P;
+        font-size: 25px;
+        font-weight: 700;
+        color: #1f3f3e;
+        padding-left: 20px;
+    }
+    .row{
+        padding-top: 10px;
+        width: 18%;
+        a{
+            font-family: $P;
+            font-size: 18px;
+            font-weight: 500;
+            width: 150px;
+            border-radius: 50px;
+        }
+    }
+}
+.ch-cart-separator{
+    border-top: 0px;
+    
+}

@@ -1,0 +1,94 @@
+.page-register main.container{
+    width: 1088px;
+    max-width: 100%;
+    margin: auto;
+    padding: 30px;
+    .page-content{
+        .container3{
+            .container2{
+                .board{
+                    h1{
+                        font-family: $P;
+                        font-size: 40px;
+                        font-weight: 700;
+                        color: #1f3f3e;
+                    }
+                }
+            }
+        }
+        .container{
+            .container2{
+                #CadastroAbas{
+                    .aberta{
+                        a{
+                            background: #60A038;
+                        }
+                    }
+                    ul{
+                        li{
+                            a{
+                                font-family: $P;
+                                font-size: 18px;
+                                font-weight: 500;
+                                border-radius: 50px;;
+                            }
+                        }
+                    }
+                }
+                form{
+                    .board{
+                        .color{
+                            span{
+                                font-family: $P;
+                                font-size: 30px;
+                                font-weight: 800;
+                                color: #1f3f3e;
+                                margin-bottom: 15px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #frm2{
+        label{
+            font-family: $P;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 1.3;
+        }
+        .text{
+            border-radius: 50px;
+            border: 3px solid #1f3f3e;
+        }
+        h2.txt-dados-entrega{
+            margin-top: 20px;
+        }
+        .text#cep_2{
+            margin-left: 0px;
+        }
+    }
+    #span_cep_nacional{
+        #cep_1{
+            margin-left: 0px;
+        }
+    }
+    .botao-prosseguir-cadastro{
+        background: #1f3f3c;
+        font-family: $P;
+        font-size: 16px;
+        font-weight: 700;
+        border-radius: 50px;
+    }
+    #senha_cliente_erro, #senha_cliente2_erro{
+        font-family: $P;
+        font-size: 16px;
+        font-weight: 400;
+    }
+    .mensagensErro{
+        font-family: $P;
+        font-size: 16px;
+        font-weight: 400;
+    }
+}

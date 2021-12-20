@@ -184,14 +184,69 @@
         font-size: 18px;
         font-weight: 400;
     }
-    .modal-content{
-        .modal-title{
+}
+.modal-content{
+    .modal-header{
+        h4.modal-title{
             font-family: $P;
             font-size: 18px;
+            font-weight: 700;
+            color: #1f3f3e;
+        }
+    }
+    .modal-body{
+        .cart-preview-table{
+            .cart-preview-quantity-tag-box{
+                background: #1f3f3e;
+                span{
+                    font-family: $P;
+                    font-size: 14px;
+                    font-weight: 500;
+                }
+            }
+            .cart-preview-item-name-box{
+                span{
+                    font-family: $P;
+                    font-size: 16px;
+                    font-weight: 500;
+                }
+                small{
+                    font-family: $P;
+                    font-size: 11px;
+                    font-weight: 400;
+                    margin-top: 5px;
+                }
+               
+            }
+            .cart-preview-item-price-box{
+                .block{
+                    font-family: $P;
+                    font-size: 16px;
+                    font-weight: 500;
+                }
+                small{
+                    font-family: $P;
+                    font-size: 11px;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+    .modal-footer{
+        .cart-preview-subtotal{
+            font-family: $P;
+            font-size: 16px;
             font-weight: 500;
+        }
+        .botao-commerce{
+            background: #60A038;
+            border-radius: 50px;
+            height: 40px;
+            padding: 14px;
         }
     }
 }
+
 @media screen and (max-width: 760px){
     .page-product main.container{
         #coments{
