@@ -61,6 +61,53 @@ header.app__customer-preview__header{
     font-size: 16px;
     font-weight: 700;
 }
+.app__header{
+    background: #EDEDED;
+    .app__icon{
+        path{
+            color: #60A038;
+        }
+    }
+    .app__customer-greetings__greeting-item{
+        font-family: $P;
+        font-size: 16px;
+        font-weight: 500;
+    }
+}
+header.app__order-list__header{
+    border-radius: 50px;
+    h3{
+        font-family: $P;
+        font-size: 18px;
+        font-weight: 800;
+        padding: 15px;
+        color: #1f3f3e;
+    }
+}
+header.app__address-list__header{
+    border-radius: 50px;
+    h3{
+        font-family: $P;
+        font-size: 18px;
+        font-weight: 800;
+        padding: 15px;
+        color: #1f3f3e;
+    }
+}
+.app__addresses__address{
+    font-family: $P;
+    font-size: 16px;
+    font-weight: 500;
+}
+.app__badge--success{
+    background: #60A038;
+}
+.app__button--primary-outline{
+    color: #FFFFFF;
+}
+
+
+
 
 
 

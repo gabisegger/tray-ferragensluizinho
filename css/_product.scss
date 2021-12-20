@@ -25,11 +25,13 @@
         .product-1{
             .product-price{
                 text-align: center;
-                font-size: 35px;
                 margin-bottom: 8px;
-                color: #1f3f3e;
+                font-family: $P;;
                 font-weight: 800;
                 text-transform: uppercase;
+                color: #bababa;
+                font-size: 27px;
+                height: 33px;
                 .price-offer{
                     font-size: 35px;
                 }
