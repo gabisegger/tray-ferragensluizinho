@@ -113,6 +113,10 @@
                     font-family: $P;
                     font-size: 18px;
                     font-weight: 500;
+                    margin: auto;
+                }
+                svg{
+                    display: none;
                 }
             }
             &::after{
@@ -179,6 +183,13 @@
         font-family: $P;
         font-size: 18px;
         font-weight: 400;
+    }
+    .modal-content{
+        .modal-title{
+            font-family: $P;
+            font-size: 18px;
+            font-weight: 500;
+        }
     }
 }
 @media screen and (max-width: 760px){
