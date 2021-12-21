@@ -26,12 +26,13 @@
 }
 header.app__dashboard__header{
     border-radius: 50px;
+    background: #60A038;
     h2{
         font-family: $P;
         font-size: 18px;
         font-weight: 800;
-        padding: 15px;
-        color: #1f3f3e;
+        padding: 15px 25px;
+        color: #ffffff;
     }
 }
 .app__order-not-found__text{
@@ -45,12 +46,13 @@ header.app__dashboard__header{
 }
 header.app__customer-preview__header{
     border-radius: 50px;
+    background: #60A038;
     h2{
         font-family: $P;
         font-size: 18px;
         font-weight: 800;
-        padding: 15px;
-        color: #1f3f3e;
+        padding: 15px 25px;
+        color: #FFFFFF;
     }
 }
 .app__customer-preview__content{
@@ -97,28 +99,31 @@ header.app__customer-preview__header{
 }
 header.app__order-list__header{
     border-radius: 50px;
+    background: #60A038;
     h3{
         font-family: $P;
         font-size: 18px;
         font-weight: 800;
-        padding: 15px;
-        color: #1f3f3e;
+        padding: 15px 25px;
+        color: #ffffff;
     }
 }
 header.app__address-list__header{
     border-radius: 50px;
+    background: #60A038;;
     h3{
         font-family: $P;
         font-size: 18px;
         font-weight: 800;
-        padding: 15px;
-        color: #1f3f3e;
+        padding: 15px 25px;
+        color: #ffffff;
     }
 }
 .app__addresses__address{
     font-family: $P;
     font-size: 16px;
     font-weight: 500;
+
 }
 .app__badge--success{
     background: #60A038;
@@ -128,12 +133,13 @@ header.app__address-list__header{
 }
 header.app__customer-password-change__header{
     border-radius: 50px;
+    background: #60A038;
     h3{
         font-family: $P;
         font-size: 18px;
         font-weight: 800;
-        padding: 15px;
-        color: #1f3f3e;
+        padding: 15px 25px;
+        color: #ffffff;
     }
 }
 form.app__customer{
@@ -159,6 +165,31 @@ form.app__customer{
         font-family: $P;
         font-size: 16px;
         font-weight: 400;
+    }
+}
+@media screen and (max-width: 760px){
+    header .app__header__container{
+        padding: 0 20px;
+        .app__customer-greetings{
+            margin-right: 20px;
+        }
+        .app__dropdown__menu{
+            min-width: 15rem;
+        }
+    }
+    form.app__customer{
+        svg.fa-w-20{
+            right: 0;
+        }
+    }
+    .app__addresses__address{
+        .row{
+            display: grid;
+            .app__address-list__item--infos{
+                margin-bottom: 20px;
+                max-width: 100%
+            }
+        }
     }
 }
 
