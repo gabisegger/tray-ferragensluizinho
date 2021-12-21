@@ -19,16 +19,20 @@
         ul{
             li{
                 h4{
-                    font-size: 14px;
+                    font-size: 20px;
                     font-family: $P;
-                    font-weight: 400;
+                    font-weight: 800;
+                    display: block;
                     margin-bottom: 10px;
-                    margin-top: 10px;
+                    margin-top: 25px;
+                    line-height: 27px;
+                    color: #1f3f3e;
                 }
                 ul{
                     font-family: $P;
-                    font-size: 18px;
-                    font-weight: 500;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 27px;
                 }
             }
         }
@@ -41,12 +45,13 @@
                 font-family: $P;
                 font-size: 20px;
                 font-weight: 500;
-                
             }
             .container3{
                 .container2{
                     .board{
+                        font-family: $P;
                         font-size: 14px;
+                        font-weight: 400;
                         margin-top: 10px;
                     }
                 }
@@ -59,8 +64,25 @@
         padding: 50px 20px;
         .sidebar-central{
             width: 100%;
+            text-align: center;
             h2{
                 font-size: 23px;
+            }
+        }
+        .page-content{
+            width: 100%;
+            .container3{
+                .container2{
+                    a.Mapa{
+                        display: none;
+                    }
+                    .board{
+                        text-align: center;
+                        h1{
+                            text-align: center;
+                        }
+                    }
+                }
             }
         }
     }

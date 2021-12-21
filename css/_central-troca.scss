@@ -1,4 +1,4 @@
-.page-central_lista_espera main.container{
+.page-central_troca main.container{
     width: 1088px;
     max-width: 100%;
     margin: auto;
@@ -9,7 +9,7 @@
         font-size: 18px;
         line-height: 27px;
         width: 30%;
-        margin-top: 0px;
+        margin-top: 0;
         >div{
             padding: 0;
         }
@@ -42,7 +42,6 @@
                             font-size: 16px;
                             font-weight: 400;
                             line-height: 27px;
-                            color: #666
                         }
                     }
                 }
@@ -53,46 +52,29 @@
         width: 70%;
         padding: 0 15px;
         margin-top: 0px;
-        .container3{
-            .breadcrumb{
-                display: flex;
-                padding-left: 0px;
-                margin-bottom: 30px;
-            }
-            .container2{
-                .board{
-                    h1{
-                        font-family: $P;
-                        font-size: 20px;
-                        font-weight: 500;
-                        color: #333;
-                        &::after{
-                            display: none;
-                        }
-                        
-                    }
-                }
-            }
-                    
-        }
         .board{
-            .container3{
-                .container2{
-                    .board{
-                        font-family: $P;
-                        font-weight: 400;
-                        font-size: 14px;
-                        margin-top: 10px;
-                    }
+            .tablePage{
+                h4{
+                    font-size: 14px;
+                    font-family: $P;
+                    font-weight: 400;
+                }
+                h3{
+                    font-family: $P;
+                    font-size: 20px;
+                    font-weight: 500;
                 }
             }
-            
-        }  
-    
+            .blocoAlerta{
+                font-size: 14px;
+                font-family: $P;
+                font-weight: 400;
+            }
+        }
     }
 }
 @media screen and (max-width: 760px){
-    .page-central_lista_espera main.container{
+    .page-central_troca main.container{
         padding: 50px 20px;
         .sidebar-central{
             width: 100%;
@@ -103,19 +85,27 @@
         }
         .page-content{
             width: 100%;
-            .container3{
-                .container2{
-                    a.Mapa{
-                        display: none;
-                    }
-                    .board{
+            .board{
+                .tablePage{
+                    h4{
                         text-align: center;
-                        h1{
-                            text-align: center;
-                        }
                     }
+                    h3{
+                        text-align: center;
+                        margin-bottom: 5px;
+                    }
+                    
+                }
+                .blocoAlerta{
+                    margin: 0;
+                    margin-top: 20px;
                 }
             }
-        }        
+        }
+        table{
+            td{
+                padding: 0;
+            }
+        }
     }
 }
