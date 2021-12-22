@@ -337,3 +337,48 @@ body .product-1{
         z-index: 10;
     }
 }
+@media screen and (max-width: 760px){
+    .page-product{
+        main.container{
+            .product-name{
+                line-height: 1;
+            }
+        }
+        .products-related{
+            >.row{
+                display: flex;
+                .slick-prev{
+                    position: absolute;
+                    z-index: 9;
+                    width: 40px;
+                    height: 40px;
+                    top: 0;
+                    bottom: 0;
+                    margin: auto;
+                    font-size: 0;
+                    left: -15px;
+                  }
+                  .slick-next{
+                    position: absolute;
+                    z-index: 9;
+                    width: 40px;
+                    height: 40px;
+                    top: 0;
+                    bottom: 0;
+                    margin: auto;
+                    font-size: 0;
+                    right: -15px;
+                  }
+                .slick-track{
+                    left: -628px;
+                }
+            }
+        }
+    }
+    body .product-1{
+        .product-name{
+            line-height: 1;
+        }
+    }
+    
+}

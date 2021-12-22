@@ -299,3 +299,31 @@ header{
         display: none;
     }
 }
+@media screen and (max-width: 760px){
+    html body{
+        >.menu-mobile[class*="block"]{
+            width: 90vw;
+            background: #EDEDED;
+            h5{
+                font-family: $P;
+                font-size: 25px;
+                font-weight: 800;
+                color: #1F3F3E;
+                &::after{
+                    border-top: unset;
+                    border-bottom: 1px solid lightgray;
+                }
+                ul{
+                    li{
+                        font-family: $P;
+                        font-size: 25px;
+                        font-weight: 800;
+                        color: #1F3F3E;
+                    }
+                }
+            }
+        } 
+    }
+        
+    
+}

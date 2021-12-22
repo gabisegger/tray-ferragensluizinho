@@ -209,6 +209,16 @@ footer .foo-content{
             justify-content: center;
             margin-bottom: 14px;
         }
+        li.atendimento-geral{
+            display: block;
+            text-align: center;
+            line-height: 21px;
+            .descricao-horario{
+                font-size: 14px;
+                font-weight: 500;
+                font-family: $P;
+            }
+        }
         .icon-social{
             //text-align: center;
             display: flex;
@@ -262,16 +272,7 @@ footer .foo-content{
             }
         }
 
-        .atendimento-geral{
-            display: block;
-            text-align: center;
-            line-height: 21px;
-            .descricao-horario{
-                font-size: 14px;
-                font-weight: 500;
-                font-family: $P;
-            }
-        }
+
         
         svg{
             width: 50px;

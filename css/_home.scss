@@ -225,3 +225,73 @@
     }
   }
 } 
+@media screen and (max-width: 760px){
+  .page-home{
+    .block-2{
+      ul{
+        display: block;
+        height: auto;
+        margin: 35px 0;
+        li{
+          margin-bottom: 10px;
+        }
+      }
+    }
+    .showcase:not([class*="block-"]){
+      h2{
+        strong{
+          font-size: 46px;
+        }
+      }
+    }
+    .block-6{
+      h2{
+        font-size: 40px;
+      }
+      .block-video{
+        display: grid;
+        .left{
+          width: auto;
+        }
+        .right{
+          text-align: center;
+        }
+      }
+    }
+    .block-8{
+      h2{
+        font-size: 46px;
+        line-height: 60px;
+      }
+    }
+    .block-9{
+      h2{
+        font-size: 37px;
+      }
+      .blog-posts{
+        .slick-prev{
+          position: absolute;
+          z-index: 9;
+          width: 40px;
+          height: 40px;
+          top: 0;
+          bottom: 0;
+          margin: auto;
+          font-size: 0;
+          left: -15px;
+        }
+        .slick-next{
+          position: absolute;
+          z-index: 9;
+          width: 40px;
+          height: 40px;
+          top: 0;
+          bottom: 0;
+          margin: auto;
+          font-size: 0;
+          right: -15px;
+        }
+      }
+    }
+  }
+}
