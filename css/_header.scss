@@ -299,6 +299,13 @@ header{
         display: none;
     }
 }
+
+@media screen and (min-width: 761px) {
+    .hide-desk {
+        display: none;
+    }
+}
+
 @media screen and (max-width: 760px){
     html body{
         >.menu-mobile[class*="block"]{
@@ -313,17 +320,144 @@ header{
                     border-top: unset;
                     border-bottom: 1px solid lightgray;
                 }
-                ul{
-                    li{
-                        font-family: $P;
-                        font-size: 25px;
-                        font-weight: 800;
-                        color: #1F3F3E;
+            }
+            .close-menu{
+                transform: rotate(45deg);
+                font-family: $P;
+                font-size: 40px;
+                font-weight: 700;
+                color: #1F3F3E;
+                position: absolute;
+                right: 5px;
+                top: 3px;
+            }
+            .categories-mobile{
+                label.link-level1{
+                    &::after{
+                        content: '';
+                        width: 10px;
+                        height: 10px;
+                        display: inline-block;
+                        transform: rotate(135deg);
+                        border-top: 2px solid #1F3F3E;
+                        border-right: 2px solid #1f3f3e;
+                        opacity: 1;
+                        -webkit-transition: 0.3s ease;
+                        transition: 0.3s ease;
+                        margin-bottom: 1px;
+                        margin-right: 10px;
+                    }
+                }
+                .link-level1{
+                    font-family: $P;
+                    font-size: 18px;
+                    font-weight: 500;
+                    color: #1F3F3E;
+                    background: #EDEDED;
+                    display: flex;
+                    justify-content: space-between;
+                    width: 100%;
+                    
+                    i{
+                        display: none;
+                    }
+                }
+                .level2{
+                    .item-level2{
+                        a{
+                            font-family: $P;
+                            font-size: 16px;
+                            font-weight: 500;
+                            color: #1F3F3E;
+                            background: #EDEDED;
+                        }
                     }
                 }
             }
-        } 
+        }
+        .menu-mobile.active{
+            transform: translateX(0);
+        }
+        .menu-mobile-backdrop.active{
+            overflow: visible;
+            visibility: visible;
+            background: rgba(0,0,0,.5);
+            opacity: 1;
+        }
+                
     }
+    header .container .row {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px 0;
+        .hamburger{
+            height: 7px;
+            width: 32px;
+            background: #60A038;
+            display: inline-block;
+            border-radius: 50px;
+            &::before{
+                content: '';
+                height: 7px;
+                width: 32px;
+                background: #60A038;
+                display: inline-block;
+                border-radius: 50px;
+                top: -12px;
+                position: relative;
+            }
+            &::after{
+                content: '';
+                height: 7px;
+                width: 32px;
+                background: #60A038;
+                display: inline-block;
+                border-radius: 50px;
+            }
+
+        }
+        .logo{
+            margin: 0;
+            width: 150px;
+            height: auto;
+            .site-logo{
+                height: auto;
+                &::before{
+                    display: none;
+                }
+            }
+        }
+        .pesquisa{
+            order: 10;
+            .search{
+                .form{
+                    width: calc(100% - 50px);
+                    margin: auto;
+                    height: 45px;
+                }
+            }
+        }
+        .conta{
+            width: auto;
+            gap: 10px;
+            .cadastro{
+                width: 30px;
+                a{
+                    display: none;
+                }
+            }
+            .carrinho{
+                .cart-icon{
+                    img{
+                        width: 30px;
+                    }
+                }
+            }
+        }
         
+    }       
+           
     
 }
