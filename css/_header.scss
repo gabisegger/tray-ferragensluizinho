@@ -307,6 +307,11 @@ header{
 }
 
 @media screen and (max-width: 760px){
+    html{
+        .application{
+            transform: none;
+        }
+    }
     html body{
         >.menu-mobile[class*="block"]{
             width: 90vw;
@@ -328,7 +333,7 @@ header{
                 font-weight: 700;
                 color: #1F3F3E;
                 position: absolute;
-                right: 5px;
+                right: 8px;
                 top: 3px;
             }
             .categories-mobile{
@@ -392,6 +397,7 @@ header{
         align-items: center;
         justify-content: space-between;
         padding: 20px 0;
+        margin: 0;
         .hamburger{
             height: 7px;
             width: 32px;
@@ -457,7 +463,19 @@ header{
             }
         }
         
-    }       
+    } 
+    header{
+        box-shadow: -4px -1px 10px 5px rgba(0,0,0,.1);
+        z-index: 9999999;
+        position: relative;
+    } 
+    header.active{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        box-shadow: -4px -1px 10px 5px rgba(0,0,0,.35);
+    }     
            
     
 }
