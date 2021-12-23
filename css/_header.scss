@@ -382,12 +382,14 @@ header{
         }
         .menu-mobile.active{
             transform: translateX(0);
+            z-index: 9999999999999;
         }
         .menu-mobile-backdrop.active{
             overflow: visible;
             visibility: visible;
             background: rgba(0,0,0,.5);
             opacity: 1;
+            z-index: 9999999999999;
         }
                 
     }
