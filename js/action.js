@@ -32,6 +32,22 @@ if(jQuery(window).width() < 760){
             slidesToScroll: 1
         });
     }
+    //click hamburger
+    jQuery('.hamburger').on('click', function(){
+        jQuery('.menu-mobile').addClass('active');
+        jQuery('.menu-mobile-backdrop').addClass('active')
+    })
+    //fim click hamburger
+    //click close-menu
+    jQuery('.close-menu').on('click', function(){
+        jQuery('.menu-mobile').removeClass('active');
+        jQuery('.menu-mobile-backdrop').removeClass('active')
+    })
+    jQuery('.menu-mobile-backdrop').on('click', function(){
+        jQuery('.menu-mobile').removeClass('active');
+        jQuery('.menu-mobile-backdrop').removeClass('active')
+    })
+     //fim click close-menu
 }
 
 
