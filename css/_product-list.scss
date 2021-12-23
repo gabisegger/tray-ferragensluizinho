@@ -376,8 +376,40 @@ body .product-1{
         }
     }
     body .product-1{
+        height: auto;
+        border-radius: 30px;
+        padding: 15px 10px;
+        .product-price.out-of-stock {
+            font-size: 18px;
+        }
+        .product-price.out-of-stock {
+            height: 59px;
+        }
+        .product-payment {
+            span, strong {
+                font-size: 1.4rem;
+            }
+        }
         .product-name{
             line-height: 1;
+            font-size: 18px;
+            height: 55px;
+        }
+        .product-price .price-offer {
+            font-size: 24px;
+        }
+        .product-buttons a {
+            font-size: 12px;
+            line-height: 1.2;
+            text-align: center;
+            border-radius: 25px;
+            height: auto;
+            padding: 10px 0;
+            *, span {
+                &::before {
+                    font-size: 12px;
+                }
+            }
         }
     }
     
