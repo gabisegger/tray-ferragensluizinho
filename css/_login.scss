@@ -60,12 +60,15 @@
     }
 }
 tray-login .tray-container__identify{
-    width: 430px;
+    width: 430px !important;
+    max-width: 90%;
     height: 250px;
     padding-top: 25px;
     border-radius: 50px;
-    padding: 47px;
-    padding-top: 30px;
+    padding: 25px 30px;
+    left: 0;
+    right: 0;
+    margin: auto;
     form{
         input{
             font-family: $P;
@@ -99,7 +102,6 @@ tray-login .tray-container__identify{
 tray-login .tray-container{
     top: calc(50% - 275px);
     border-radius: 50px;
-    padding: 42px;
     .tray-title{
         font-family: $P;
         font-size: 25px;
