@@ -197,6 +197,8 @@ footer .foo-content{
             font-family: $P;
             font-weight: 500;
             font-size: 18px;
+            line-height: 27px;
+            margin: 0;
             a{
                 color: #1F3F3E;
                 font-family: $P;
@@ -617,13 +619,15 @@ footer .foo-message{
         }  
         .payment-gateways{
             .payment-list{
-                padding: 0 40px 30px;
+                padding: 0 20px 30px;
                 border-bottom: 1px solid #606060;
                 margin-left: 0;
                 display: grid;
                 grid-template-columns: 1fr 1fr 1fr;
                 gap: 10px;
                 justify-content: center;
+                max-width: 100%;
+                justify-items: center;
                 &::before{
                     display: none;
                 }

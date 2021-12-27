@@ -316,11 +316,28 @@ header{
         >.menu-mobile[class*="block"]{
             width: 90vw;
             background: #EDEDED;
+            .cadastro{
+                display: flex;
+                align-items: center;
+                padding: 14px;
+                border-bottom: 1px solid lightgray;
+                .desk-link{
+                    text-transform: uppercase;
+                    font-family: $P;
+                    font-size: 17px;
+                    font-weight: 500;
+                    padding-left: 10px;
+                }
+                &::after{
+                    border-bottom: 1px solid lightgray;
+                }
+            }
             h5{
                 font-family: $P;
                 font-size: 25px;
                 font-weight: 800;
                 color: #1F3F3E;
+                display: none;
                 &::after{
                     border-top: unset;
                     border-bottom: 1px solid lightgray;
@@ -362,6 +379,8 @@ header{
                     display: flex;
                     justify-content: space-between;
                     width: 100%;
+                    padding: 14px;
+                    border-bottom: 1px solid lightgray;
                     
                     i{
                         display: none;
