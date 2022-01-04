@@ -283,27 +283,26 @@
       padding: 0;
       background: none;
       &::before {
-        content: "";
-        border: none;
-        font-size: 0;
         display: inline-block;
-        width: 10px;
-        height: 10px;
-        border-top: 2px solid black;
-        border-right: 2px solid black;
-        border-left: none;
+        background-image: url(//images.tcdn.com.br/files/1079236/themes/21/img/Esq.png?586.7820847203941);
+        background-position: center;
+        background-size: contain;
+        width: 21px;
+        height: 69px;
+        background-repeat: no-repeat;
+        border: navajowhite;
       }
       &.slick-prev {
-        left: 0;
+        left: -40px;
         right: unset;
         &::before {
-          transform: rotate(-135deg);
+          transform: rotate(0deg);
         }
       }
       &.slick-next {
-        right: 0;
+        right: -40px;
         &::before {
-          transform: rotate(45deg);
+          transform: rotate(180deg);
         }
       }
     }
@@ -356,27 +355,18 @@
         font-size: 37px;
       }
       .blog-posts{
-        .slick-prev{
-          position: absolute;
-          z-index: 9;
-          width: 40px;
-          height: 40px;
-          top: 0;
-          bottom: 0;
-          margin: auto;
-          font-size: 0;
-          left: -15px;
-        }
-        .slick-next{
-          position: absolute;
-          z-index: 9;
-          width: 40px;
-          height: 40px;
-          top: 0;
-          bottom: 0;
-          margin: auto;
-          font-size: 0;
-          right: -15px;
+        &.slick-slider{
+          .slick-arrow{
+            &::before{
+              height: 50px;
+            }
+            &.slick-prev{
+              left: -20px;
+            }
+            &.slick-next{
+              right: -20px;
+            }
+          }
         }
       }
     }
