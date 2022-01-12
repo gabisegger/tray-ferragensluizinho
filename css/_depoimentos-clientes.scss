@@ -1,0 +1,158 @@
+.page-depoimentos{
+    .page-content{
+        >div {
+            padding: 20px 30px;
+        }
+        >.board{
+            display: flex;
+            justify-content: center;
+        }
+        .container3{
+            margin-top: 0;
+            .form_depto{
+                max-width: 600px;
+                margin: auto;
+                label{
+                    font-family: $P;
+                    font-size: 20px;
+                    font-weight: 400;
+                    color: #666;
+                    input{
+                        border: 3px solid #1f3f3e;
+                        border-radius: 50px;
+                       
+                    }
+                    #nome_depoimento{
+                        width: 100%;
+                    }
+                    #email_depoimento{
+                        width: 100%;
+                    }
+                    h3{
+                        font-family: $P;
+                        font-size: 20px;
+                        font-weight: 400;
+                        color: #666; 
+                        margin-bottom: 5px;
+                    }
+                    h5{
+                        font-family: $P;
+                        font-size: 15px;
+                        font-weight: 400;
+                        color: #666;
+                    }
+                    .textarea{
+                        border: 3px solid #1f3f3e;
+                        border-radius: 20px;
+                    }
+                }
+                a{
+                    &::before{
+                        width: 100px;
+                        height: 40px;
+                        background: #1f3f3c;
+                        content: 'Enviar!';
+                        color: #ffffff;
+                        font-family: "Poppins",sans-serif;
+                        font-size: 16px;
+                        font-weight: 700;
+                        display: flex;
+                        justify-content: center;
+                        margin: auto;
+                        align-items: center;
+                        border-radius: 20px;
+                    }
+                    img{
+                        display: none;
+                    }
+                }
+                .nota_dep{
+                    font-family: $P;
+                    font-size: 20px;
+                    font-weight: 400;
+                    color: #666;
+                    margin-bottom: 22px;
+                    label{
+                        font-family: $P;
+                        font-size: 18px;
+                        font-weight: 400;
+                        color: #666;
+                        position: relative;
+                        top: 8px;
+                    }
+                }
+            }
+            .container2{
+                .board{
+                    h1{
+                        font-family: $P;
+                        font-size: 40px;
+                        font-weight: 700;
+                        color: #1f3f3e;
+                        margin-top: 40px;
+                        text-align: center;
+                    }
+                    .left{
+                        font-family: $P;
+                        font-size: 18px;
+                        font-weight: 500;
+                        text-align: center;
+                        float: unset;
+                    }
+                }
+            }
+        }
+        .board{
+            
+            .editDep{
+                border-radius: 50px;
+                padding: 10px 20px;
+                width: auto;
+                box-shadow: 0px 0px 6px #0000001c;
+                border: 1px solid lightgrey;
+                li{
+                    h3.color{
+                        font-family: $P;
+                        font-size: 18px;
+                        font-weight: 500;
+                        text-transform: none;
+                        text-align: center;
+                        border-left: unset;
+                    }
+                    ul{
+                        li{
+                            font-family: $P;
+                            font-size: 16px;
+                            font-weight: 500; 
+                            strong{
+                                border-left: unset;
+                            }
+                                
+                        }
+                    }
+                }
+            }    
+        }
+    
+
+    }   
+
+}
+@media screen and (max-width: 760px){
+    .page-depoimentos{
+        .page-content{
+            >div{
+                padding: 10px;
+            }
+            .container3{
+                .container2{
+                    .board{
+                        .left{
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

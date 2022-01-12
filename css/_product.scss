@@ -113,6 +113,40 @@
                 background: #1f3f3e;
             }
         }
+        .produto-calcular-frete{
+            .cepbox-text{
+                display: flex !important;
+                font-family: $P;
+                font-size: 16px;
+                font-weight: 800;
+                color: #1f3f3e !important;
+                margin: 20px 0;
+            }
+            label{
+                font-family: $P;
+                font-size: 16px;
+                font-weight: 500;
+            }
+            input.text{
+                font-family: $P;
+                font-size: 16px;
+                font-weight: 500;
+                border-radius: 5px
+            }
+            .botao-simular-frete{
+                font-family: $P;
+                font-size: 16px;
+                font-weight: 500;
+                border-radius: 50px;
+                background: #1f3f3e !important;
+                &::before{
+                    font-family: $P;
+                    font-size: 16px;
+                    font-weight: 500;
+                }
+            }
+        }
+
     }
     .product-tabs{
         #ProdAbas{

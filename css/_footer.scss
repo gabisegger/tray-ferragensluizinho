@@ -2,6 +2,7 @@
 
 footer .news-full{
     background: #60A038;
+    border-bottom: unset;
     .container{
         width: 1088px;
         max-width: 100%;
@@ -247,13 +248,13 @@ footer .foo-content{
         }
         .payment-form{
             padding: 3px;
-            background: #1F3F3E;
+            background: unset;
             border-radius: 50px;
             width: 80px;
             height: 43px;
             display: flex;
             justify-content: center;
-            gap: 10px;
+            gap: 5px;
             
             img{
                 //max-height: 27px;
@@ -521,7 +522,8 @@ footer .foo-message{
                 margin-right: 16px;
                 font-family: $P;
                 font-weight: 500;
-                font-size: 18px; 
+                font-size: 18px;
+                text-align: left; 
             }
             .logo-credits{
                 .logotray-message{
