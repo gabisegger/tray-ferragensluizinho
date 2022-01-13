@@ -96,8 +96,18 @@
     }
   }
   .block-4 {
-    background: #60A038;
+    background: #60A038 url(http://images.tcdn.com.br/files/1079236/themes/21/img/bgtextura.png?343.86500055511596);
+    position: relative;
     padding: 95px 0;
+    &::before {
+      content: '';
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-image: linear-gradient(to bottom, #60A038, #60a038b8, rgba(255,0,0,0));
+    }
     .grid-banners {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
