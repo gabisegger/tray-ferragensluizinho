@@ -117,6 +117,7 @@
           color: white;
           padding: 3px;
           font-family: $P;
+          margin-left: 8px;
         }
       }
     }
@@ -218,6 +219,19 @@
     }
     img {
       margin: auto;
+    }
+    .banner-marcas{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      li{
+        img{
+          width: 260px;
+          height: auto;
+        }
+        &::marker{
+          display: none;
+        }
+      }
     }
   }
   .block-9 {

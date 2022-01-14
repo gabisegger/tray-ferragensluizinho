@@ -1,5 +1,20 @@
 //
+
 jQuery(document).ready(function() {
+    jQuery( ".block-8 .banner-js ul li" ).each(function() {
+      jQuery( this ).appendTo( ".banner-marcas" );
+    });
+
+    if(jQuery(window).width() > 760){
+      jQuery('.block-3 .showcase ul').slick('unslick');
+    
+      jQuery('.block-3 .showcase ul').slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        arrows: false
+      });
+    }
     jQuery('.block-3 h2').append('<div class="departure"><p>As ofertas acabam em</p><span id="countdown"></span></div>');
     const Countdown = (() => {
 
