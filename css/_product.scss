@@ -6,6 +6,19 @@
     .products-visited{
         display: none;
     }
+    .shipping-result{
+        .page-simula-frete{
+            >p{
+                span{
+                    display: block;
+                    margin-top: 12px;
+                }
+            }
+            >.tablePage{
+                margin-top: 30px;
+            }
+        }
+    }
     .products-related{
         border-radius: 50px;
         padding-top: 25px;

@@ -7,7 +7,7 @@
     background: #1F3F3E;
     
     .level1{
-        height: 50px;
+        height: 59px !important;
         position: relative;
         display: flex;
         justify-content: center;
@@ -20,7 +20,7 @@
             font-size: 18px;
             font-weight: 500;
             color: #FFFFFF;
-            width: calc(100%/6);
+            width: calc((100% / 6) + 40px);
             text-align: center;
             background: #60A038;
             height: inherit;
@@ -64,7 +64,8 @@
         position: relative;
         padding-left: 0px;
         padding-right: 0px;
-        width: calc(100%/6);
+        width: calc((100% / 6) - 8px);
+        padding-top: 4px;
         span{
             font-family: $P;
             font-size: 18px;

@@ -232,6 +232,18 @@ footer .foo-content{
                 height: 60px;
                 background: #1F3F3E;
                 border-radius: 50px;
+                padding: 0;
+                svg{
+                    width: 60px;
+                    height: 60px;
+                    >g{
+                        fill: white;
+                        &:last-child{
+                            display: none;
+                        }    
+                    }
+                    
+                }
             }
         }
         .selos{
