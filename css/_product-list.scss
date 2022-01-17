@@ -201,6 +201,71 @@ body .product-1{
            
         }
     }
+    .product-box-infos{
+        display: grid;
+        .product-price{
+            order: 2;
+            .strike{
+                .price-offer{
+                    font-family: $P;
+                    font-size: 22px;
+                    font-weight: 600;
+                    color: #aaa;
+                    order: 3;
+                    line-height: 1;
+                    margin-bottom: -10px;
+                    display: inline;
+                }
+                
+                &::before{
+                    content: 'ou ';
+                    font-family: $P;
+                    font-size: 18px;
+                    font-weight: 400;
+                    color: #aaa;
+                    text-transform: none;
+                }
+                &::after{
+                    content: ' à vista';
+                    font-family: $P;
+                    font-size: 18px;
+                    font-weight: 400;
+                    color: #aaa;
+                    text-transform: none;
+                }
+            }  
+        }
+        .product-payment{
+            order: 1;
+            .txt-corparcelas{
+                .preco-parc2{
+                    font-size: 0;
+                    .color, span{
+                        font-size: 30px;
+                        font-family: $P;
+                        font-weight: 800;
+                        color: #1f3f3e;
+                    }
+                }
+            }
+            .preco-de{
+                font-size: 16px;
+                font-weight: 400;
+            }
+            .txt-cadaparcelas{
+                .preco-parc2, span{
+                    font-size: 30px;
+                    font-family: $P;
+                    font-weight: 800;
+                    color: #1f3f3e;
+                }
+            }
+            .operadora{
+                display: none;
+            }
+            
+        }
+    }
     
     .pricing{
         text-align: center;

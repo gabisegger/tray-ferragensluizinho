@@ -72,6 +72,7 @@
     }
     form{
         #produto_preco{
+            display: grid;
             &::before{
                 background: #1f3f3e;
             }
@@ -79,17 +80,71 @@
                 font-family: $P;
                 font-size: 16px;
                 font-weight: 400;
+                order: 1;
             }
             .PrecoPrincipal{
                 font-family: $P;
-                font-size: 45px;
-                font-weight: 800;
-                color: #1f3f3e;
+                font-size: 20px;
+                font-weight: 600;
+                color: #aaa;
+                order: 3;
+                line-height: 1;
+                margin-bottom: -10px;
+                &::before{
+                    content: 'ou';
+                    font-family: $P;
+                    font-size: 16px;
+                    font-weight: 400;
+                    color: #aaa;
+                }
+                &::after{
+                    content: ' à vista';
+                    font-family: $P;
+                    font-size: 16px;
+                    font-weight: 400;
+                    color: #aaa;
+                }
             }
             #info_preco{
                 font-family: $P;
                 font-size: 16px;
-                font-weight: 400; 
+                font-weight: 400;
+                width: max-content; 
+                max-width: 100%;
+                order: 2;
+                padding-top: 14px;
+                .txt-corparcelas{
+                    .preco-parc2{
+                        font-size: 0;
+                        .color{
+                            font-size: 40px;
+                            font-family: $P;
+                            font-weight: 800;
+                            color: #1f3f3e;
+                        }
+                    }
+                }
+                .txt-cadaparcelas{
+                    .preco-parc2{
+                        font-size: 40px;
+                        font-family: $P;
+                        font-weight: 800;
+                        color: #1f3f3e;
+                    }
+                    
+                }
+                .operadora{
+                    display: block;
+                    text-align: right;
+                    font-size: 16px;
+                    font-weight: 400;
+                    font-family: $P;
+                }
+                .preco-de{
+                    font-size: 16px;
+                    font-weight: 400;
+                }
+                
             }
         }
         #produto_nao_disp{
@@ -300,6 +355,33 @@
                 font-size: 22px;
             }
         }
+        .produto-calcular-frete{
+            border-top: 1px solid lightgray;
+            margin-top: 22px;
+            #cepbox{
+                justify-content: center;
+                text-align: center;
+                input{
+                  &:first-of-type{
+                    width: calc(100% - 134px);
+                  }
+                }
+                .cepbox-text{
+                    justify-content: center;
+                }
+                .botao-commerce{
+                    margin: auto;
+                    margin-top: 10px;
+                }
+            }
+        }
+        form{
+            .wrapper-btn-buy{
+                &::after{
+                    display: none;
+                }
+            }
+        }
         .product-name{
            color: #1f3f3e;
            text-align: center;
@@ -339,6 +421,14 @@
         .products-related{
             > h4{
                 text-align: center;
+            }
+            >.row{
+                .slick-prev{
+                    left: 0;
+                }
+                .slick-next{
+                    right: 0;
+                }
             }
             .related-title{
                 font-size: 33px;
