@@ -5,13 +5,18 @@
     .catalog-header{
         border-radius: 50px;
         padding-left: 30px;
+        display: grid;
+        border: none;
         .catalog-name{
             color: #1f3f3e;
             font-family: $P;
             font-size: 30px;
             font-weight: 700;
+            order: 1;
+            margin-bottom: 0;
         }
         .system-filter{
+            order: 3;
             form{
                 margin-top: 20px;
                 label{
@@ -22,11 +27,13 @@
                         font-family: $P;
                         font-size: 18px;
                         font-weight: 500;
+                        border-radius: 10px;
                     }
                 }
             }
         }
         .pagination{
+            order: 4;
             .catalogo-pagination{
                 .left{
                     font-family: $P;
@@ -40,6 +47,17 @@
                 }
             }
         }
+        .category-description{
+            order: 2;
+            span{
+                font-family: $P;
+                font-size: 18px;
+                font-weight: 500;
+            }
+        }
+    }
+    .catalog-content{
+        margin-top: 0;
     }
     .catalog-footer{
         border-radius: 50px;

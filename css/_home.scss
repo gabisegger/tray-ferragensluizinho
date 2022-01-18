@@ -222,14 +222,44 @@
     }
     .banner-marcas{
       display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      gap: 16px;
+      padding: 0px 85px;
+      margin-top: 54px;
       li{
+        list-style: none;
+        position: relative;
+        width: 220px;
+        height: auto;
+        border-radius: 10px;
+        border: 1px solid;
+        padding: 5px;
+        margin-bottom: 15px;
+        overflow: hidden;
         img{
           width: 260px;
           height: auto;
         }
-        &::marker{
-          display: none;
+        .label_text{
+          p{
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: red;
+            font-family: $P;
+            font-size: 29px;
+            font-weight: bold;
+            transition: 0.6s ease;
+            color: white;
+            &:hover{
+              opacity: 0;  
+            }
+          }
         }
       }
     }
