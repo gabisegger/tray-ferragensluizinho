@@ -4,6 +4,19 @@ jQuery(document).ready(function() {
     jQuery( ".block-8 .banner-js ul li" ).each(function() {
       jQuery( this ).appendTo( ".banner-marcas" );
     });
+    
+    jQuery(".block-8 .banner-marcas li .label_text p").each(function(){
+      var text = $(this).text();
+      var textarray = text.split("|")
+      $(this).text(textarray[0])
+      $(this).css("background", textarray[1])
+    });
+  
+    jQuery('.banner-marcas li').each(function(){
+        var thisContent = $(this).html();
+        var container = '<div class="flipper">'+thisContent+'</div>';
+        $(this).html(container)
+    });
 
     if(jQuery(window).width() > 760){
       jQuery('.block-3 .showcase ul').slick('unslick');
