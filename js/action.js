@@ -1,6 +1,21 @@
 //
 
 jQuery(document).ready(function() {
+    // CLIQUE PARA ABRIR VÍDEO NA HOME
+    jQuery('.block-video .left').on('click',function(){
+        var thisLink = jQuery(this).find('img').attr('title');
+        var formattedLink = thisLink.replace('watch?v=', 'embed/');
+        var iframeYt = '<iframe src="'+formattedLink+'" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+        jQuery('.modal-video .video').html(iframeYt);
+        jQuery('.modal-video').fadeIn();
+    });
+    
+    jQuery('.modal-video .bg-modal, .modal-video .close-btn').on('click', function(){
+        jQuery('.modal-video').fadeOut();
+        jQuery('.modal-video iframe').remove();
+    });
+    // FIM CLIQUE PARA ABRIR VÍDEO NA HOME
+
     jQuery( ".block-8 .banner-js ul li" ).each(function() {
       jQuery( this ).appendTo( ".banner-marcas" );
     });
