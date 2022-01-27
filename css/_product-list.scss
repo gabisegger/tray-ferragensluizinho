@@ -444,6 +444,15 @@ body .product-1{
         height: auto;
         border-radius: 30px;
         padding: 15px 10px;
+        .product-box-infos{
+            .product-payment{
+                .txt-cadaparcelas{
+                    .preco-parc2{
+                        line-height: 1;
+                    }
+                }
+            }
+        }
         .product-price.out-of-stock {
             font-size: 18px;
         }
