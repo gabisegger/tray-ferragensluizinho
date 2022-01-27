@@ -637,6 +637,50 @@
     }
     .block-8 {
       padding-top: 5px;
+      h2{
+        padding: 0 10px;
+      }
+      .banner-marcas{
+        display: block;
+        padding: 0 10px;
+        margin-top: 0;
+        li{
+          transform: scale(.9);
+          width: auto;
+          .flipper{
+            transform: none !important;
+            >img{
+              transform: none !important;
+            }
+          }
+          .label_text{
+            display: none !important;
+          }
+        }
+        .slick-dots{
+          display: flex;
+          justify-content: center;
+          gap: 8px;
+          li{
+            height: auto;
+            button{
+              border: none;
+              border-radius: 50%;
+              font-size: 0;
+              width: 12px;
+              height: 12px;
+              background:#1F3F3E;
+            } 
+          }
+          .slick-active{
+            button{
+              background:rgb(96, 160, 55);
+            }
+            
+          }
+        }
+        
+      }
     }
     .block-9 {
       h2 {
