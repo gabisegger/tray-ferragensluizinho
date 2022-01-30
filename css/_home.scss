@@ -1,5 +1,5 @@
 .page-home {
-  .modal-content{
+  .modal-video{
     position: fixed;
     width: 100%;
     height: 100%;
@@ -23,6 +23,7 @@
       bottom: 0;
       width: 500px;
       height: 300px;
+      max-width: 90%;
       .close-btn{
         position: absolute;
         top: -45px;
@@ -91,6 +92,7 @@
       background: #60A038;
     }
   }
+
   .block-2 {
     background: #EDEDED;
     ul {
@@ -267,8 +269,8 @@
     .banner-marcas{
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-      gap: 16px;
-      padding: 0px 85px;
+      gap: 16px; 
+      padding: 0; 
       margin-top: 54px;
       li{
         list-style: none;
@@ -441,8 +443,10 @@
       border: none;
       padding: 0;
       background: none;
+      font-size: 0;
       &::before {
-        display: inline-block;
+        content: '';
+        display: inline-block !important;
         background-image: url(//images.tcdn.com.br/files/1079236/themes/21/img/Esq.png?586.7820847203941);
         background-position: center;
         background-size: contain;
@@ -532,7 +536,77 @@
   }
 }
 
+@media(min-width: 761px) {
+.no-desk {
+  display: none;
+} 
+}
+
+.page-home .box_skitter {
+  height: auto !important;
+  .container_skitter {
+    display: none !important;
+  }
+  ul {
+    display: block !important;
+    .label_text {
+      display: none;
+    }
+  }
+}
+.page-home .container_skitter {
+  height: auto !important;
+  img {
+    width: 100%;
+  }
+}
+
+.banner-home .slick-dots {
+  .slick-active {
+    button {
+      background: #60a037;
+    }
+  }
+}
+
+.page-home .box_clone {
+  height: auto !important;
+  img {
+    width: 100% !important;
+  }
+}
+
+.banner-home {
+  .info_slide_dots {
+    display: none !important;
+  }
+  .slick-slide img {
+    width: 100% !important;
+    height: auto !important;
+  }
+}
+
 @media(max-width: 760px) {
+  
+  .no-mob {
+    display: none;
+  }
+
+  body .product-1 .product-box-infos .product-payment .txt-corparcelas .preco-parc2 .color, body .product-1 .product-box-infos .product-payment .txt-corparcelas .preco-parc2 span {
+    font-size: 19px;
+  }
+  body .product-1 .product-box-infos .product-payment .txt-cadaparcelas .preco-parc2, body .product-1 .product-box-infos .product-payment .txt-cadaparcelas span {
+    font-size: 19px;
+  }
+  body .product-1 .product-box-infos .product-price .strike .price-offer {
+    font-size: 17px;
+  }
+  body .product-1 .product-box-infos .product-price .strike::before, body .product-1 .product-box-infos .product-price .strike::after {
+    font-size: 15px;
+  }
+  body .product-1 .product-box-infos .product-price.strike {
+    height: 51px;
+  }
   .page-home {
     .block-4 {
       .grid-banners {

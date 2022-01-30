@@ -1,6 +1,18 @@
 //
 
 jQuery(document).ready(function() {
+    // FULL BANNER HOME SLICK
+    if(jQuery('.banner-home .box_skitter ul').length) {
+      jQuery('.banner-home .box_skitter ul').slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        dots: true
+      });
+    }
+    // FIM FULL BANNER HOME SLICK
+
     // CLIQUE PARA ABRIR VÍDEO NA HOME
     jQuery('.block-video .left').on('click',function(){
         var thisLink = jQuery(this).find('img').attr('title');
